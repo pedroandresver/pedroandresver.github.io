@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio del Alumno</title>
+    <style>
+        /* Estilos CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Nombre estilizado en la parte superior izquierda */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        header .nombre {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        header .icono-inicio {
+            width: 30px;
+            height: 30px;
+        }
+
+        /* Barra de navegación */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            color: #f4f4f4;
+            background-color: #555;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        /* Sección Sobre mí */
+        .sobre-mi {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 5px;
+        }
+
+        .sobre-mi img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .sobre-mi p {
+            font-size: 18px;
+        }
+
+        /* Sección Habilidades */
+        .habilidades {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 5px;
+        }
+
+        .habilidad {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .habilidad img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        /* Sección Proyectos */
+        .proyectos {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 5px;
+        }
+
+        .proyecto {
+            margin: 10px 0;
+        }
+
+        /* Sección Recomendaciones */
+        .recomendaciones {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 5px;
+        }
+
+        /* Botón de envío de recomendación */
+        .enviar-recomendacion {
+            display: block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .enviar-recomendacion:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado con nombre estilizado e icono de inicio -->
+    <header>
+        <div class="nombre">Pedro Vera Martinez</div>
+        <img src="1.jpg" alt="Inicio" class="icono-inicio">
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <a href="#acerca-de">Acerca de</a>
+        <a href="#detalles-proyecto">Detalles del Proyecto</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#recomendaciones">Recomendaciones</a>
+    </nav>
+
+    <!-- Sección Sobre mí -->
+    <section id="acerca-de" class="sobre-mi">
+        <img src="1.jpg" alt="Foto de perfil">
+        <div>
+            <h2>Sobre mí</h2>
+            <p>Hola, soy Pedro Vera Martinez, un desarrollador web apasionado por la tecnología. Me especializo en HTML, CSS, y JavaScript, y me encanta crear proyectos que resuelvan problemas del mundo real.</p>
+        </div>
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section id="habilidades" class="habilidades">
+        <h2>Habilidades</h2>
+        <div class="habilidad">
+            <img src="2.png" alt="HTML5">
+            <p>HTML5 - Lenguaje de marcado para la estructura web.</p>
+        </div>
+        <div class="habilidad">
+            <img src="3.png" alt="CSS3">
+            <p>CSS3 - Hojas de estilo para la presentación web.</p>
+        </div>
+        <div class="habilidad">
+            <img src="4.png" alt="JavaScript">
+            <p>JavaScript - Programación para interactividad web.</p>
+        </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="detalles-proyecto" class="proyectos">
+        <h2>Proyectos</h2>
+        <div class="proyecto">
+            <h3>Proyecto 1: Sitio web de portafolio</h3>
+            <p>Creación de un sitio web personal para mostrar mis habilidades y proyectos.</p>
+        </div>
+        <div class="proyecto">
+            <h3>Proyecto 2: Aplicación de tareas</h3>
+            <p>Desarrollo de una aplicación para gestionar tareas pendientes utilizando JavaScript.</p>
+        </div>
+        <div class="proyecto">
+            <h3>Proyecto 3: Tienda en línea</h3>
+            <p>Implementación de una tienda en línea con carrito de compras y procesamiento de pagos.</p>
+        </div>
+    </section>
+
+    <!-- Sección Recomendaciones -->
+    <section id="recomendaciones" class="recomendaciones">
+        <h2>Recomendaciones</h2>
+        <div class="recomendacion">
+            <p>"Pedro es un excelente desarrollador, siempre comprometido con la calidad de su trabajo." - Juan Pérez</p>
+        </div>
+        <div class="recomendacion">
+            <p>"Muy profesional y con un gran conocimiento en tecnología web." - María López</p>
+        </div>
+        <div class="recomendacion">
+            <p>"Su habilidad para resolver problemas técnicos es impresionante." - Luis García</p>
+        </div>
+
+        <!-- Formulario para añadir nueva recomendación -->
+        <button class="enviar-recomendacion" onclick="enviarRecomendacion()">Enviar Recomendación</button>
+    </section>
+
+    <script>
+        // Función para mostrar mensaje emergente al enviar recomendación
+        function enviarRecomendacion() {
+            alert("¡Recomendación enviada con éxito!");
+        }
+    </script>
+
+</body>
+</html>
